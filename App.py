@@ -191,7 +191,7 @@ def update_talk(id):
 
 # Update Speaker in given Talk
 @app.route('/update_speaker/<talk_id>/<sp_id>', methods=['PUT'])
-def update_talk(talk_id, sp_id):
+def update_speaker(talk_id, sp_id):
     speaker = Speaker.query.get(sp_id)
     speaker.talk_id = talk_id
 
@@ -201,7 +201,7 @@ def update_talk(talk_id, sp_id):
 
 # Update Participant in given Talk
 @app.route('/update_participant/<talk_id>/<pt_id>', methods=['PUT'])
-def update_talk(talk_id, pt_id):
+def update_participant(talk_id, pt_id):
     participant = Participant.query.get(pt_id)
     participant.talk_id = talk_id
 

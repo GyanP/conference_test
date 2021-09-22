@@ -1,0 +1,13 @@
+# conference_test
+Install flask with command pip install Flask
+Install Flask-SQLAlchemy with command pip install Flask-SQLAlchemy
+Install Flask-Marshmallow with command pip install flask-marshmallow
+API Endpoints for :-
+To create a conference :- '/create_conf'
+To edit a conference :- '/update_conf/<id>'
+To add a talk :- '/create_talk'
+To edit a talk :- '/update_talk/<id>'
+To add/remove speaker from a talk :- '/update_speaker/<talk_id>/<sp_id>'
+To add/remove participant from a talk :- '/update_participant/<talk_id>/<pt_id>'
+o To list talks in a conference :- '/talks_from_conf/<id>'
+o To list conferences :- '/conferences'
